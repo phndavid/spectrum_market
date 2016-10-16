@@ -1,5 +1,4 @@
-import json
-operador = {"deltas": [
+{"operadores": [
 	{   "id": 1,
 		"cqi": 2,
 		"users":[
@@ -16,8 +15,3 @@ operador = {"deltas": [
 		]	
 	}
 ]}
-#Nos imprime en pantalla data como un tipo de dato nativo.
-print 'OPERADOR:', repr(operador)
-#Nos devuelve el String con el JSON
-data_string = json.dumps(operador)
-print 'JSON:', data_string
