@@ -17,19 +17,7 @@ Abonados en servicio telefonia móvil= 57'292.621
 """
 Ejemplo del formato Json a utilizar.
 """
-operador = {"deltas": [
-	{   "id": 1,
-		"escala_t": 1,
-		"cqi": 2,
-		"users":[
-		   {"user":1, "bin_service":[1,0,1,0,1], "time_service":[2,0,4,0,3], "bw":[1,0,1,0,1], "sum_bw": 3},
-		   {"user":2, "bin_service":[1,0,1,0,1], "time_service":[5,0,5,0,5], "bw":[1,0,1,0,1], "sum_bw": 3},
-		   {"user":3, "bin_service":[1,0,1,0,1], "time_service":[2,0,2,0,2], "bw":[1,0,1,0,1], "sum_bw": 3}
-		],
-		"totallyBW": 9,
-		"maxBW": 3	
-	}
-]}
+operador = {"deltas": []}
 
 """
 Metodo: createUser
