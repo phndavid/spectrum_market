@@ -161,18 +161,19 @@ def addDeltas(escala_t, size, size_users):
 """
 Permite crear todos los deltas t que tendrá un operador.
 """
-addDeltas(1,2,60);
+addDeltas(1,60,100);
 
 """
 Genera archivo en formato json con todos los datos del operador
 """
-with open('operador.json', 'w') as outfile:
+nameOperator = "operadorE"
+with open(nameOperator+'.json', 'w') as outfile:
     json.dump(operador, outfile)
 
 """
 Genera archivo en formato CSV con la suma y ancho de banda maximo de los delta de t.
 """
-f = csv.writer(open("operadors.csv", "wb+"))
+f = csv.writer(open(nameOperator+".csv", "wb+"))
 # Write CSV Header, If you dont need that, remove this line
 f.writerow(["MaxBW", "SumBW"])
 
